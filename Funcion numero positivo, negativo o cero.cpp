@@ -25,4 +25,5 @@ main()
 	scanf("%g",&n);
 	r=numero(n);
 	getch();
+	
 } 
