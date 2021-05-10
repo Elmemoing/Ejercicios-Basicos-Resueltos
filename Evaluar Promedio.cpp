@@ -1,7 +1,7 @@
 /*Desarrolla un programa que haga lo siguiente
-1 muestre el nombre de tres alumnos juan, saul, leo, después  pida 3  calificaciones
+1 muestre el nombre de tres alumnos juan, saul, leo, despuÃ©s  pida 3  calificaciones
 2 realiza el promedio de esas calificaciones
-3 evalúa el promedio si es menor a 7 muestra un mensaje de reprobado*/
+3 evalÃºa el promedio si es menor a 7 muestra un mensaje de reprobado*/
 
 #include <stdio.h>
 #include <conio.h>
@@ -24,7 +24,7 @@ int main()
 	if (prom >7)
 	{
 		printf("\n Aprobado");
-    }	
+        }	
 	else
 	{
 		printf("\n reprobado");
