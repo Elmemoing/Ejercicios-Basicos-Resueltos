@@ -4,8 +4,8 @@ Informar por pantalla:
  
 la cantidad de ingreso de edades.
 el promedio de edad.
-la edad mayor y la posición del índice que se encuentra en el vector
-la edad menor y la posición del índice que se encuentra en el vector
+la edad mayor y la posiciÃ³n del Ã­ndice que se encuentra en el vector
+la edad menor y la posiciÃ³n del Ã­ndice que se encuentra en el vector
 */
 #include <stdio.h>
 #include <conio.h>
@@ -20,7 +20,7 @@ int main()
 	mayor = 0;
 	for (int i = 0; i < 10; i++) {
 	    do {
-		    printf("\n Ingrese edad %d \n", i+1);
+		printf("\n Ingrese edad %d \n", i+1);
 	        scanf("%d",&edad[i]);
 	        cont ++;
 	        mayor = edad[0];
