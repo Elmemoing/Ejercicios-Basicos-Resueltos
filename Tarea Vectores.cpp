@@ -4,8 +4,8 @@ Informar por pantalla:
  
 la cantidad de ingreso de edades.
 el promedio de edad.
-la edad mayor y la posici√≥n del √≠ndice que se encuentra en el vector
-la edad menor y la posici√≥n del √≠ndice que se encuentra en el vector
+la edad mayor y la posiciÛn del Ìndice que se encuentra en el vector
+la edad menor y la posiciÛn del Ìndice que se encuentra en el vector
 */
 #include <stdio.h>
 #include <conio.h>
@@ -13,7 +13,7 @@ la edad menor y la posici√≥n del √≠ndice que se encuentra en el vector
 
 int main()
 {
-	int edad[10],cont, posicionMayor = 0, posicionMenor = 0;
+	int edad[10],cont, posicionMayor = 0, posicionMenor;
 	int mayor, menor, suma;
 	float promedio;
 	cont = 0;
@@ -21,7 +21,7 @@ int main()
 	
 	for (int i = 0; i < CONT; i++) {
 	      do {
-		printf("\n Ingrese edad %d \n", i+1);
+		    printf("\n Ingrese edad %d \n", i+1);
 	        scanf("%d",&edad[i]);
 	        cont ++;
 	        mayor = edad[0];
@@ -33,7 +33,7 @@ int main()
 			        }
 			      }
 				    for (int i = 0; i <10; i++ ){
-			        if (edad[i]<menor){
+			        if (edad[i]<=menor){
 	        	    menor = edad[i];
 	        	    posicionMenor = i;
 			        }
@@ -41,9 +41,9 @@ int main()
 	       }while(edad[i]<1 || edad[i]>125);
 	    suma=suma+edad[i];		   
         }
-        promedio=suma/10;
+    promedio=suma/10;
 	printf("La cantidad de ingreso de edades es: %d \n",cont); 
-	printf("promedio de edad es: %f \n",promedio);
+	printf("promedio de edad es: %.2f \n",promedio);
 	printf("El mayor es: %d y se encuentra en la posicion: %d \n",mayor,posicionMayor);
 	printf("El menor es: %d y se encuentra en la posicion: %d \n",menor,posicionMenor);
 	getch();
