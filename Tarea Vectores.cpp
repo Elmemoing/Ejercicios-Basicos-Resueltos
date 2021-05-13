@@ -4,8 +4,8 @@ Informar por pantalla:
  
 la cantidad de ingreso de edades.
 el promedio de edad.
-la edad mayor y la posición del índice que se encuentra en el vector
-la edad menor y la posición del índice que se encuentra en el vector
+la edad mayor y la posiciÃ³n del Ã­ndice que se encuentra en el vector
+la edad menor y la posiciÃ³n del Ã­ndice que se encuentra en el vector
 */
 #include <stdio.h>
 #include <conio.h>
@@ -32,12 +32,12 @@ int main()
 	        	     posicionMayor = i;
 			        }
 			      }
-				    for (int i = 0; i <10; i++ ){
-			        if (edad[i]<=menor){
-	        	    menor = edad[i];
-	        	    posicionMenor = i;
+	           for (int i = 0; i <10; i++ ){
+			 if (edad[i]<=menor){
+	        	      menor = edad[i];
+	        	      posicionMenor = i;
 			        }
-		           }
+		              }
 	       }while(edad[i]<1 || edad[i]>125);
 	    suma=suma+edad[i];		   
         }
