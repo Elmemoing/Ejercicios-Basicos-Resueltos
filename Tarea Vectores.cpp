@@ -9,31 +9,42 @@ la edad menor y la posición del índice que se encuentra en el vector
 */
 #include <stdio.h>
 #include <conio.h>
+#define CONT 10
 
 int main()
 {
-	int edad[10],cont;
+	int edad[10],cont, posicionMayor = 0, posicionMenor = 0;
 	int mayor, menor, suma;
-	int promedio;
+	float promedio;
 	cont = 0;
 	suma = 0;
-	mayor = 0;
-	for (int i = 0; i < 10; i++) {
-	    do {
+	
+	for (int i = 0; i < CONT; i++) {
+	      do {
 		printf("\n Ingrese edad %d \n", i+1);
 	        scanf("%d",&edad[i]);
 	        cont ++;
 	        mayor = edad[0];
-	        if (edad[i]>mayor){
-	        	mayor = edad[i];
-			}
+	        menor = edad[0];
+	           for (int i = 0; i <10; i++){
+	                if (edad[i]>mayor){
+	        	     mayor = edad[i];
+	        	     posicionMayor = i;
+			        }
+			      }
+				    for (int i = 0; i <10; i++ ){
+			        if (edad[i]<menor){
+	        	    menor = edad[i];
+	        	    posicionMenor = i;
+			        }
+		           }
 	       }while(edad[i]<1 || edad[i]>125);
 	    suma=suma+edad[i];		   
-    }
-    
-    promedio=suma/10;
-	printf("promedio de edad es: %d \n",promedio);
-	printf("El mayor es: %d \n",mayor);
-	printf("La cantidad de ingreso de edades es: %d",cont); 
+        }
+        promedio=suma/10;
+	printf("La cantidad de ingreso de edades es: %d \n",cont); 
+	printf("promedio de edad es: %f \n",promedio);
+	printf("El mayor es: %d y se encuentra en la posicion: %d \n",mayor,posicionMayor);
+	printf("El menor es: %d y se encuentra en la posicion: %d \n",menor,posicionMenor);
 	getch();
 }
