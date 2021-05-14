@@ -27,7 +27,7 @@ void main()
 				}
 			      }
 		   for (int c = 0; c <10; c++ ){
-			if (edad[i]<=menor){
+			if (edad[i]<menor){
 			    menor = edad[i];
 			    posicionMenor = i;
 			       }
