@@ -8,8 +8,8 @@ void main()
 {
 	clrscr;
 	int edad[10],cont, posicionMayor = 0, posicionMenor = 0;
-	int mayor, menor, suma;
-	float promedio;
+	int mayor, menor;
+	float promedio, suma;
 	cont = 0;
 	suma = 0;
 
