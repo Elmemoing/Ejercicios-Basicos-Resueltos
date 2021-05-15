@@ -35,7 +35,7 @@ void main()
 	       }while(edad[i]<1 || edad[i]>125);
 	    suma=suma+edad[i];
 	}
-    promedio=suma/10;
+        promedio=suma/10;
 	printf("La cantidad de ingreso de edades es: %d \n",cont);
 	printf("promedio de edad es: %.2f \n",promedio);
 	printf("El mayor es: %d y se encuentra en la posicion: %d \n",mayor,posicionMayor);
