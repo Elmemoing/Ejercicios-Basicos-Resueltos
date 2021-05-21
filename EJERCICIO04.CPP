@@ -13,14 +13,14 @@ void main()
   printf("ingrese frase: ");
   gets(texto);
   
-  while (palabra[x]!=\n)
+  while (texto[x]!='\0')
   { 
     if (texto[x]== 'a' || texto[x]== 'e' || texto[x]== 'i' || texto[x]== 'o' || texto[x]== 'u')
     {
-      texto[x]= 42; 
+      texto[x] = 42; 
     }  
    x++;
   }
    printf("la frase con el cambio ahora es: %c", texto); 
-    getch();
+   getch();
   }
