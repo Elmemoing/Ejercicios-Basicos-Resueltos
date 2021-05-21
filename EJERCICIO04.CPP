@@ -10,17 +10,17 @@ void main()
   clrscr; 
   char texto[MAX];
   int x=0;
-  printf("ingrese frase: ");
+  printf("ingrese frase en minuscula: ");
   gets(texto);
   
   while (texto[x]!='\0')
   { 
     if (texto[x]== 'a' || texto[x]== 'e' || texto[x]== 'i' || texto[x]== 'o' || texto[x]== 'u')
     {
-      texto[x] = 42; 
+      texto[x] = '*'; 
     }  
    x++;
   }
-   printf("la frase con el cambio ahora es: %c", texto); 
+   printf("la frase con el cambio ahora es: %s", texto); 
    getch();
   }
