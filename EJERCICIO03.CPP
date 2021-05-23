@@ -2,7 +2,8 @@
 #include<conio.h>
 #include<stdlib.h>
 
-/*Alumno: Guillermo Z. Arguello Cordobe*/
+/*Alumno: Guillermo Z. Arguello Cordobe
+Ejercicio 3*/
 
 void main()
 {
