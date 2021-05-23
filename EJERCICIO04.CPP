@@ -3,7 +3,11 @@
 #include<conio.h>
 #include<stdio.h>
 #include<stdlib.h>
+
 #define MAX 50
+
+/*Alumno: Guillermo Z.Arguello Cordobe
+Ejercicio 4 */
 
 void main()
 {
