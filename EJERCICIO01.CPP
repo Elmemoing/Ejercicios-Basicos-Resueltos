@@ -2,7 +2,6 @@
 Mostrar por pantalla la palabra y la cantidad de caracteres que tiene dicha palabra.*/
 
 #include<stdio.h>
-#include<stdlib.h>
 #include<conio.h>
 
 #define MAX 50
