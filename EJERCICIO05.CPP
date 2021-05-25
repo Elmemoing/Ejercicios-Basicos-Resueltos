@@ -1,25 +1,25 @@
 #include<stdio.h>
 #include<conio.h>
-#include<stdlib.h>
 
 /*Alumno: Guillermo Z. Arguello Cordobe
 Ejercicio 5*/
+
 void main()
 {
-    clrscr();
-    char c[50];
-    int x=0;
-    printf("Ingrese una palabra en minuscula: ");
-    gets(c);
+  clrscr();
+  char frase[50];
+  int x=0;
+  printf("Ingrese una palabra en minuscula: ");
+  gets(c);
 
-    while(c[x]!='\0')
+  while(frase[x]!='\0')
+  {
+    if (frase[x]>= 'a' && frase[x]<= 'z')
     {
-     if (c[x]>= 'a' && c[x]<= 'z')
-     {
-	c[x] = c[x] - 'a' + 'A';
+     frase[x] = frase[x] - 'a' + 'A';
      }
      x++;
     }
-    printf("En mayuscula es: %s\n", c);
+    printf("En mayuscula es: %s\n", frase);
     getch();
 }
