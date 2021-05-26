@@ -7,19 +7,19 @@ Ejercicio 5*/
 void main()
 {
   clrscr();
-  char frase[50];
-  int x=0;
-  printf("Ingrese una palabra en minuscula: ");
-  gets(c);
+  char palabra[100];
+  int i=0;
+  printf("Ingrese una palabra: ");
+  gets(palabra);
 
-  while(frase[x]!='\0')
+  while(palabra[i]!='\0')
   {
-    if (frase[x]>= 'a' && frase[x]<= 'z')
+    if (palabra[i]>= 'a' && palabra[i]<= 'z')
     {
-     frase[x] = frase[x] - 'a' + 'A';
+     palabra[i] = palabra[i] - 'a' + 'A';
      }
      x++;
     }
-    printf("En mayuscula es: %s\n", frase);
+    printf("En mayuscula es: %s\n", palabra);
     getch();
 }
