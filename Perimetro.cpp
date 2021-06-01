@@ -7,10 +7,10 @@ int main()
 {
   int perimetro,base,altura;
   
-  printf("Ingrese altura del triangulo");
-  getch("%d",&altura);
-  printf("Ingrese base del triangulo");
-  getch("%d",&base);
+  printf("Ingrese altura del rectangulo ");
+  scanf("%d",&altura);
+  printf("Ingrese base del rectangulo ");
+  scanf("%d",&base);
 
   perimetro = (base+altura)*2;
   
