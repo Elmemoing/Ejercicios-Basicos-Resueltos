@@ -7,20 +7,22 @@
 
 int main()
 {
-  int palabra[MAX];
+  char palabra[MAX+1];
   int x=0;
-  Printf("Ingrese una palabra");
+  printf("Ingrese una palabra ");
   gets(palabra);
   
   while (palabra[x]!='\0'){
   
-    if palabra[x] >= A && palabra[x] <= Z || palabra[x] >= a && palabra[x] <= z{
-    
-    palabra[x] = '*';
+    if (palabra[x] >= A && palabra[x] <= Z){
+      palabra[x] = '*'
+    }
+    else{
+      palabra[x] = '*';
     }
    x++;
   }
-  printf("La palabra es con el cambio ahora es: %s", palabra)
+  printf("La palabra con el cambio ahora es: %s", palabra)
   getch();
 }
  
