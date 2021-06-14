@@ -1,4 +1,4 @@
-/* Permitir el ingreso de una frase. Cambiar todas las vocales por un caracter de guión: '*'
+/* Permitir el ingreso de una frase. Cambiar todas las letras por un caracter de guión: '*'
 */
 #include<stdio.h>
 #include<conio.h>
