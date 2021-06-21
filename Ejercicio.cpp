@@ -46,7 +46,7 @@ int main()
 		}
 		x += 1;
 	}
-}
+          }
     /*Ejercicio 4*/
 	x = 0;
 	printf("\nPalabra Cambiada por * es:	");	
@@ -59,7 +59,7 @@ int main()
 		x += 1;
 	}	
 	
-	printf("%s",frase);
+	      printf("%s",frase);
 		
     getch();
     return 0;
