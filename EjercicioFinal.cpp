@@ -38,8 +38,8 @@ int main()
 		printf("%c",palabraMayus[x]);
 		}
 		x += 1;
-	}
-}
+	 }
+          }
 
 	x = 0;
 	printf("\nCadena Cambiada por *:	");	
@@ -47,7 +47,7 @@ int main()
 		
 		if (palabra[x] !='a' && palabra[x] !='e' && palabra[x] !='i' && palabra[x] !='o' && palabra[x] !='u' && palabra[x] !='A' && palabra[x] !='E' &&
 		palabra[x] !='I' && palabra[x] !='O' && palabra[x] !='U' && palabra[x] > 63 && palabra[x] < 91){
-			palabra[x] = '*';
+		palabra[x] = '*';
 		}
 		x += 1;
 	}	
