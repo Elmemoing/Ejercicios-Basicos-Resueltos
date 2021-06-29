@@ -3,8 +3,7 @@ using namespace std;
 
 int main() {
 	int costo;
-	float iva;
-	float total;
+	float iva, total;
 	cout << "Ingrese costo de producto" << endl;
 	cin >> costo;
 	iva = costo*0.15;
@@ -12,4 +11,3 @@ int main() {
 	cout << "El costo total del producto es: $" << total << endl;
 	return 0;
 }
-
