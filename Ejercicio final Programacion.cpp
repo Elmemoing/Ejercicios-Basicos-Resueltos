@@ -18,7 +18,7 @@ int main()
 {
 	char frase[100];
 	int vocales=0, minuscula=0, mayuscula=0;
-	int i=0, x=0, c=0, d=0;
+	int i=0, x=0, c=0, d=0, e=0, a=0; /*contadores*/
 	
 	printf("Ingrese una frase: \n");
 	gets(frase);
@@ -46,18 +46,54 @@ int main()
 			}
 		c++;
     }
-    printf("\n\n 2- La cantidad de vocales minusculas que tiene la frase es: %d", minuscula);
-
+    printf("\n\n 3- La cantidad de vocales minusculas que tiene la frase es: %d", minuscula);
+	while (frase[d]!='\0')
+    {
+		if (frase[d]=='A' || frase[d]=='E' || frase[d]=='I' || frase[d]=='O' || frase[d]=='U')
+			{
+	    		mayuscula++;
+			}
+		d++;
+    }
+    printf("\n    La cantidad de vocales mayusculas que tiene la frase es: %d", mayuscula);
 	/*Frase a mayuscula*/
 	while(frase[x]!='\0')
   			{
     			if (frase[x]>= 'a' && frase[x]<= 'z')
-    		{
-     			frase[x] = frase[x] - 'a' + 'A';
-     		}
+    				{
+     				    frase[x] = frase[x] - 'a' + 'A';
+     				}
      			x++;
     		}
     printf("\n\n 4- En mayuscula es: %s\n", frase);
+    
+    /*Frase a minuscula*/
+    while(frase[e]!='\0')
+  		  {
+    		if (frase[e]>= 'A' && frase[e]<= 'Z')
+    		   {
+     				frase[e] = frase[e] - 'A' + 'a';
+     		   }
+     		   e++;
+    		}
+    printf("\n\n 5- En minuscula es: %s\n", frase);
+    
+    /*Frase Inverso*/
+    while (frase[a++]!='\0');
+    {
+    	printf("\n\n 6- La frase invertida es: ");
+		while(a>=0)
+			{
+			printf("%c",frase[a--]);
+			}
+	}
+	
+	/*Tipo frase*/
+	if (frase[0]>= 'a' && frase[0]<= 'z')
+		{
+			frase[0] = frase[0] - 'a' + 'A';
+		}
+	printf("\n\n 7- Tipo frase es: %s", frase);
 	return 0;
 	getch();
 }
